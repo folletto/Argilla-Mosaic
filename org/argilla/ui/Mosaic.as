@@ -566,7 +566,7 @@ package org.argilla.ui {
 }
 
 {
-	import argilla.ui.Mosaic;
+	import org.argilla.ui.Mosaic;
 
 	class MosaicArrays extends flash.utils.Proxy {
 		
