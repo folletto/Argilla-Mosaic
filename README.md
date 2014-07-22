@@ -1,7 +1,7 @@
-Mosaic - AS3 Library for Layout Composition
-===========================================
+Mosaic - AS3 Layout Library
+===========================
 
-Helper to provide modular alignment between objects.
+Helper to provide modular alignment between objects.  
 Each object can be bound to just one other object. New binds will redefine the old one.
 
 Usage
@@ -33,8 +33,10 @@ To remove:
 If there are elements bound to the removed element, they will realign "falling"
 in the place of the unbound element.
 
-Note that normal addChild() also works, but it's automatically done on tile():
+Note that normal `addChild()` also works, but it's automatically done on `tile()`:
+```
   a.addChild(sprite1);
+```
 
 The Mosaic object supports also an Array-like structure, using this syntax:
 
@@ -50,7 +52,7 @@ The Mosaic object supports also an Array-like structure, using this syntax:
   a.array.name["item"]; // Name get (getChildByName shortcut)
 ```
 
-The Mosaic object supports also a "fast" creation for Display Objects, using mold()
+The Mosaic object supports also a "fast" creation for Display Objects, using `mold()`:
 
 ```
   var obj = Mosaic.mold(TextField, "name", { prop1: "data", onEvent: function(){}, ... })
